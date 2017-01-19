@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <unistd.h> //for using the function sleep
+#include <stdio.h> //required for printf
+#include <unistd.h> //required for sleep
 
 int main()
 {
