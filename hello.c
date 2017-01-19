@@ -5,10 +5,9 @@ int main()
 {
   printf("hello world\n");
   printf("C++\n");
-  printf(" beep!\a\n");
-  sleep(1);
-  printf(" beep!\a\n");
-  sleep(1);
-  printf(" beep!\a\n");
+  for(int i=0;i<3;i++) {
+    printf(" beep!\a\n");
+    sleep(1);
+  }
   return 0;
 }
