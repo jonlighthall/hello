@@ -5,7 +5,7 @@ int main()
 {
   printf("hello world\n");
   printf("C++\n");
-  for(int i=0;i<3;i++) {
+  for(int i=0;i<3;i++) {//print beeps at end of program
     printf(" beep!\a\n");
     sleep(1);
   }
