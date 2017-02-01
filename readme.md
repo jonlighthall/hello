@@ -21,5 +21,5 @@ the compiled executables can be run using the following commands
   ./f.exe
 
 the phython script does not need to be compiled and is executed with the following command
-
-    ./hello.py
+  
+  ./hello.py
