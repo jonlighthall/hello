@@ -7,7 +7,7 @@ int main()
   printf("C++\n");
   for(int i=0;i<3;i++) {//print beeps at end of program
     printf(" beep!\a\n");
-    Sleep(1000)
+	Sleep(1000);
   }
   return 0;
 }
