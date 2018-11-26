@@ -1,7 +1,8 @@
 # Hello World
-This repsoitory contains two "hello world" programs.
+This repsoitory contains three "hello world" programs.
 
 ## Installation
+check out the folder from the repository with the following command
 
 ### Prerequisites
 
