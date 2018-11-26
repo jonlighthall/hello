@@ -1,8 +1,6 @@
-two hello world programs
+three hello world programs
 
-check out the folder from the repository with either of the following commands
-
-  svn co https://github.com/jonlighthall/hello.git/trunk/ ./hello
+check out the folder from the repository with the following command
 
   git clone https://github.com/jonlighthall/hello
 
