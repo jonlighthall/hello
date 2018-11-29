@@ -37,7 +37,10 @@ The compiled executables can be run using the following commands.
 `./c.exe`
   
   ./f.exe
-
-the phython script does not need to be compiled and is executed with the following command
+```
+the phython script does not need to be compiled and is executed with one of the following commands
   
+```
   ./hello.py
+  python hello.py
+```
