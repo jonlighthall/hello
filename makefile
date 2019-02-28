@@ -1,11 +1,12 @@
 all: c.exe f.exe
 
-c.exe:
+c.exe: hello.c
 	@echo compiling C++...
-	g++ -o c.exe hello.c
-f.exe:
+	g++ $^ -o $@
+
+f.exe: hello.f
 	@echo compiling fortan...
-	gfortran -o f.exe hello.f
+	gfortran $^ -o $@
 
 clean:
 	@echo removing files...
