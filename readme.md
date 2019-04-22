@@ -2,7 +2,6 @@
 This repsoitory contains three "hello world" programs.
 
 ## Installation
-check out the folder from the repository with the following command
 
 ### Prerequisites
 
@@ -36,13 +35,8 @@ The compiled executables can be run using the following commands.
   
 `./c.exe`
   
-  ./f.exe
-```
-./c.exe
-./f.exe
-```
+`./f.exe`
+
 The phython script does not need to be compiled and is executed with one of the following commands.
-```
-./hello.py
-python hello.py
-```
+`./hello.py`
+`python hello.py`
