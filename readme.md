@@ -1,5 +1,5 @@
 # Hello World
-This repsoitory contains three "hello world" programs.
+This repsoitory contains four "hello world" programs.
 
 ## Installation
 
@@ -30,6 +30,8 @@ Compile the source files and create executables with the following commands.
 
 Alternatively, these commands can be executed by using the `make` command.
 
+The script files do not need to be compiled.
+
 ## Executing
 The compiled executables can be run using the following commands.
   
@@ -37,6 +39,10 @@ The compiled executables can be run using the following commands.
   
 `./f.exe`
 
-The phython script does not need to be compiled and is executed with one of the following commands.
+The phython script is executed with either one of the following commands.
 `./hello.py`
 `python hello.py`
+
+The bash script is executed with either one of the following commands.
+`./hello.sh`
+`bash hello.sh`
