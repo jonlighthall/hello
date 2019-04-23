@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 'hello'
+echo 'hello world'
 echo 'bash'
 for i in {1..3}
 
