@@ -1,6 +1,14 @@
 # Hello World
 This repsoitory contains four "hello world" programs.
-In addition to the usual printing of "hello world," these programs also include a FOR loop used to "print" the system default beep.
+
+## Function
+Each program exhibits the following functionality.
+1. Print `hello world`
+1. Print program/scripting language name
+1. Execute a FOR loop with 3 iterations
+   1. Print the word `beep!`
+   2. Print the system default beep 
+   3. Add a sleep timer so that each default beep can play in its entirety 
 
 ## Installation
 
