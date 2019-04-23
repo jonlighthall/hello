@@ -1,5 +1,6 @@
 # Hello World
 This repsoitory contains four "hello world" programs.
+In addition to the usual printing of "hello world," these programs also include a FOR loop used to "print" the system default beep.
 
 ## Installation
 
