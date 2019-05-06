@@ -6,6 +6,7 @@ Each program exhibits the following functionality.
 1. Print `hello world`
 1. Print program/scripting language name
 1. Execute a FOR loop with 3 iterations
+   1. Print the iteration number
    1. Print the word `beep!`
    2. Print the system default beep 
    3. Add a sleep timer so that each default beep can play in its entirety 
