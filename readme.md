@@ -4,12 +4,12 @@ This repsoitory contains four "hello world" programs.
 ## Function
 Each program exhibits the following functionality.
 1. Print `hello world`
-1. Print program/scripting language name
-1. Execute a FOR loop with 3 iterations
+1. Print programing/scripting language name
+1. Execute a FOR loop with 3 iterations and:
    1. Print the iteration number
-   1. Print the word `beep!`
+   1. Print the word `beep`
    2. Print the system default beep 
-   3. Add a sleep timer so that each default beep can play in its entirety 
+   3. Add a 1 second sleep timer so that each default beep can play in its entirety 
 
 ## Installation
 
@@ -56,3 +56,5 @@ The phython script is executed with either one of the following commands.
 The bash script is executed with either one of the following commands.
 `./hello.sh`
 `bash hello.sh`
+
+All of the execution commands have been gathered under the `make run` command.
