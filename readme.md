@@ -50,11 +50,15 @@ The compiled executables can be run using the following commands.
 `./f.exe`
 
 The phython script is executed with either one of the following commands.
+
 `./hello.py`
+
 `python hello.py`
 
 The bash script is executed with either one of the following commands.
+
 `./hello.sh`
+
 `bash hello.sh`
 
 All of the execution commands have been gathered under the `make run` command.
