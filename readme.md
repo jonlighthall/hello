@@ -1,5 +1,5 @@
 # Hello World
-This repsoitory contains four "hello world" programs.
+This repsoitory contains a number "hello world" programs.
 
 ## Function
 Each program exhibits the following functionality.
@@ -15,7 +15,8 @@ Each program exhibits the following functionality.
 
 ### Prerequisites
 
-Requies GNU Compilers for C++ and Fortran.
+Compilers for C++ and Fortran are required.
+GNU compilers can be installed with the following commands.
 
 `sudo apt install gfortran`
 
