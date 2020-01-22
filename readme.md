@@ -16,11 +16,15 @@ Each program exhibits the following functionality.
 ### Prerequisites
 
 Compilers for C++ and Fortran are required.
-GNU compilers can be installed with the following commands.
+GNU compilers, etc, can be installed with the following commands.
 
-`sudo apt install gfortran`
-
-`sudo apt install g++`
+```bash
+sudo apt install git
+sudo apt install make
+sudo apt install g++
+sudo apt install gfortran
+sudo apt install python
+```
 
 ### Cloning
 
