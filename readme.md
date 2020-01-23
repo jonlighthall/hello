@@ -21,7 +21,6 @@ GNU compilers, etc, can be installed with the following commands.
 ```bash
 sudo apt install git
 sudo apt install make
-sudo apt install g++
 sudo apt install gfortran
 sudo apt install python
 ```
