@@ -10,10 +10,14 @@ f.exe: hello.f
 
 clean:
 	@echo removing files...
-	rm c.exe f.exe
+	rm -fv c.exe f.exe
+	rm -fv a.out
 
-run:
+run: c.exe f.exe
 	./c.exe
+	@echo
 	./f.exe
+	@echo
 	python hello.py
+	@echo
 	bash hello.sh
