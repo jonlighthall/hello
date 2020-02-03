@@ -10,8 +10,12 @@ f.exe: hello.f
 
 clean:
 	@echo removing files...
-	rm -fv c.exe f.exe
+	rm -fv *.o
+	rm -fv *.obj
+	rm -fv *.exe
 	rm -fv a.out
+	rm -fv *.dwf
+	rm -fv *.pdb
 
 run: c.exe f.exe
 	./c.exe
