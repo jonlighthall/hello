@@ -2,7 +2,7 @@ all: c.exe f.exe
 
 c.exe: hello.c
 	@echo compiling C++...
-	g++ $^ -o $@
+	gcc $^ -o $@
 
 f.exe: hello.f
 	@echo compiling fortan...
@@ -10,9 +10,10 @@ f.exe: hello.f
 
 clean:
 	@echo removing files...
-	rm c.exe f.exe
+	rm -fv c.exe f.exe
+	rm -fv a.out
 
-run:
+run: c.exe f.exe
 	./c.exe
 	@echo
 	./f.exe
