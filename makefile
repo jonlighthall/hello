@@ -2,7 +2,7 @@ all: c.exe f.exe
 
 c.exe: hello.c
 	@echo compiling C++...
-	gcc $^ -o $@
+	gcc $^ -o $@ -std=c99
 
 f.exe: hello.f
 	@echo compiling fortan...
