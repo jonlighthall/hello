@@ -2,11 +2,11 @@ all: c.exe f.exe
 
 c.exe: hello.c
 	@echo compiling C++...
-	gcc $^ -o $@ -std=c99
+	x86_64-w64-mingw32-gcc -static $^ -o $@ -std=c99
 
 f.exe: hello.f
 	@echo compiling fortan...
-	gfortran $^ -o $@
+	x86_64-w64-mingw32-gfortran -static $^ -o $@
 
 clean:
 	@echo removing files...
