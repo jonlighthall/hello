@@ -1,12 +1,14 @@
 all: c.exe f.exe
 
-c.exe: hello.c
+c.exe: hello.c makefile
 	@echo compiling C++...
-	gcc $^ -o $@
+	gcc $< -o $@
 
-f.exe: hello.f
+fcflags = -fimplicit-none -pedantic -Wall -Wsurprising -W	\
+-fd-lines-as-comments -Werror
+f.exe: hello.f makefile
 	@echo compiling fortan...
-	gfortran $^ -o $@
+	gfortran $(fcflags) $< -o $@
 
 clean:
 	@echo removing files...
