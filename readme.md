@@ -46,7 +46,7 @@ Alternatively, these commands can be executed by using the `make` command.
 
 The script files do not need to be compiled.
 
-## Executing
+## Execution
 The compiled executables can be run using the following commands.
   
 `./c.exe`

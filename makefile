@@ -1,8 +1,9 @@
 all: c.exe f.exe
 
+ccflags = -std=c99
 c.exe: hello.c makefile
 	@echo compiling C++...
-	gcc $< -o $@
+	gcc $(ccflags) $< -o $@ 
 
 fcflags = -fimplicit-none -pedantic -Wall -Wsurprising -W	\
 -fd-lines-as-comments -Werror
