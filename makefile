@@ -1,20 +1,30 @@
+# makefile for MinGW
+
+# compilers
+your_CC = x86_64-w64-mingw32-gcc
+your_FC = x86_64-w64-mingw32-gfortran -static
+
+# compiler flags
+output_flags = -o $@ 
+ccflags = -std=c99
+fcflags = -fimplicit-none -fd-lines-as-comments 
+warning_flags = -pedantic -Wall -Wsurprising -W -Werror
+
 all: c.exe f.exe
 
-ccflags = -static -std=c99
 c.exe: hello.c makefile
 	@echo compiling C++...
-	x86_64-w64-mingw32-gcc $(ccflags) $< -o $@
+	$(your_CC) $(ccflags) $< $(output_flags)
 
-fcflags = -static
 f.exe: hello.f makefile
 	@echo compiling fortan...
-	x86_64-w64-mingw32-gfortran $(fcflags) $< -o $@
+	$(your_FC) $(fcflags) $(warning_flags) $< $(output_flags)
 
 clean:
 	@echo removing files...
-	rm -fv *.o
-	rm -fv *.exe
-	rm -fv a.out
+	@rm -fv *.o
+	@rm -fv *.exe
+	@rm -fv a.out
 
 run: c.exe f.exe
 	./c.exe
