@@ -1,21 +1,30 @@
+# makefile for the GNU Compiler Collection
+
+# compilers
+your_CC = gcc
+your_FC = gfortran
+
+# compiler flags
+output_flags = -o $@ 
+ccflags = -std=c99
+fcflags = -fimplicit-none -fd-lines-as-comments 
+warning_flags = -pedantic -Wall -Wsurprising -W -Werror
+
 all: c.exe f.exe
 
-ccflags = -std=c99
 c.exe: hello.c makefile
 	@echo compiling C++...
-	gcc $(ccflags) $< -o $@ 
+	$(your_CC) $(ccflags) $< $(output_flags)
 
-fcflags = -fimplicit-none -pedantic -Wall -Wsurprising -W	\
--fd-lines-as-comments -Werror
 f.exe: hello.f makefile
 	@echo compiling fortan...
-	gfortran $(fcflags) $< -o $@
+	$(your_FC) $(fcflags) $(warning_flags) $< $(output_flags)
 
 clean:
 	@echo removing files...
-	rm -fv *.o
-	rm -fv *.exe
-	rm -fv a.out
+	@rm -fv *.o
+	@rm -fv *.exe
+	@rm -fv a.out
 
 run: c.exe f.exe
 	./c.exe
