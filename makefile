@@ -1,21 +1,32 @@
+# makefile for PGI
+
+# compilers
+your_CC = pgcc
+your_FC = pgfortran
+
+# compiler flags
+output_flags = -o $@ 
+ccflags = 
+fcflags = 
+warning_flags = 
 all: c.exe f.exe
 
-c.exe: hello.c
+c.exe: hello.c makefile
 	@echo compiling C++...
-	pgcc $^ -o $@
+	$(your_CC) $(ccflags) $< $(output_flags)
 
-f.exe: hello.f
+f.exe: hello.f makefile
 	@echo compiling fortan...
-	pgfortran $^ -o $@
+	$(your_FC) $(fcflags) $(warning_flags) $< $(output_flags)
 
 clean:
 	@echo removing files...
-	rm -fv *.o
-	rm -fv *.obj
-	rm -fv *.exe
-	rm -fv a.out
-	rm -fv *.dwf
-	rm -fv *.pdb
+	@rm -fv *.o
+	@rm -fv *.obj
+	@rm -fv *.exe
+	@rm -fv a.out
+	@rm -fv *.dwf
+	@rm -fv *.pdb
 
 run: c.exe f.exe
 	./c.exe
