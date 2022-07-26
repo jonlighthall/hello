@@ -34,3 +34,5 @@ run: c.exe f.exe
 	python hello.py
 	@echo
 	bash hello.sh
+	@echo 
+	matlab -nodesktop -batch "hello_world"
