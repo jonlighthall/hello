@@ -6,8 +6,8 @@ your_FC = gfortran
 
 # compiler flags
 output_flags = -o $@ 
-ccflags = -std=c99
-fcflags = -fimplicit-none -fd-lines-as-comments
+ccflags = -std=c17
+fcflags = -std=f2018 -fimplicit-none
 fwarning_flags = -Wall -Wsurprising -W -pedantic -Warray-temporaries	\
 -Wcharacter-truncation -Wconversion-extra -Wimplicit-interface		\
 -Wimplicit-procedure -Winteger-division -Wintrinsics-std		\
@@ -22,7 +22,7 @@ c.exe: hello.c makefile
 
 f.exe: hello.f makefile
 	@echo compiling fortan...
-	$(your_FC) $(fcflags) $(fwarning_flags) $< $(output_flags)
+	$(your_FC) $(fcflags) $(fwarning_flags) $< $(output_flags) -fall-intrinsics
 
 clean:
 	@echo removing files...
@@ -31,6 +31,7 @@ clean:
 	@rm -fv a.out | sed 's/^/  /'
 
 run: c.exe f.exe
+	@echo
 	./c.exe
 	@echo
 	./f.exe
@@ -38,5 +39,5 @@ run: c.exe f.exe
 	python hello.py
 	@echo
 	bash hello.sh
-	@echo 
-	matlab -nodesktop -batch "hello_world"
+	@echo
+	@if command -v matlab 1> /dev/null; then matlab -nodesktop -batch "hello_world"; else echo "matlab not found"; fi
