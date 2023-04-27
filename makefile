@@ -22,11 +22,12 @@ f.exe: hello.f makefile
 
 clean:
 	@echo removing files...
-	@rm -fv *.o
-	@rm -fv *.exe
-	@rm -fv a.out
+	@rm -fv *.o | sed 's/^/  /'
+	@rm -fv *.exe | sed 's/^/  /'
+	@rm -fv a.out | sed 's/^/  /'
 
 run: c.exe f.exe
+	@echo
 	./c.exe
 	@echo
 	./f.exe
