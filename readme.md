@@ -16,7 +16,7 @@ Each program exhibits the following functionality.
 ### Prerequisites
 
 Compilers for C++ and Fortran are required.
-GNU compilers, etc, can be installed with the following commands.
+The GNU compilers, etc, can be installed with the following commands.
 
 ```bash
 sudo apt install git
@@ -24,6 +24,8 @@ sudo apt install make
 sudo apt install gfortran
 sudo apt install python
 ```
+
+These commands have been collected in the script [`install_packages.sh`](install_packages.sh).
 
 ### Cloning
 
