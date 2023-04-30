@@ -9,12 +9,12 @@ sudo apt upgrade -y
 # install dependancies
 sudo apt -y install git
 sudo apt -y install make
-sudo apt -y install gfortran
+sudo apt -y install gfortran-mingw-w64
 sudo apt -y install python3
 
 # re-check and cleanup
-sudo apt upgrade -y --fix-missing
-sudo apt autoremove --purge -y
+sudo apt -y upgrade --fix-missing
+sudo apt -y autoremove --purge
 sudo apt autoclean
 sudo apt clean
 
