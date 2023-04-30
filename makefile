@@ -20,11 +20,12 @@ f.exe: hello.f makefile
 
 clean:
 	@echo removing files...
-	@rm -fv *.o
-	@rm -fv *.exe
-	@rm -fv a.out
+	@rm -fv *.o | sed 's/^/  /'
+	@rm -fv *.exe | sed 's/^/  /'
+	@rm -fv a.out | sed 's/^/  /'
 
 run: c.exe f.exe
+	@echo
 	./c.exe
 	@echo
 	./f.exe
@@ -32,3 +33,5 @@ run: c.exe f.exe
 	python hello.py
 	@echo
 	bash hello.sh
+	@echo
+	@if command -v matlab 1> /dev/null; then matlab -nodesktop -batch "hello_world"; else echo "matlab not found"; fi
