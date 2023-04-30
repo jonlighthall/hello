@@ -19,10 +19,10 @@ Compilers for C++ and Fortran are required.
 The GNU compilers, etc, can be installed with the following commands.
 
 ```bash
-sudo apt install git
-sudo apt install make
-sudo apt install gfortran
-sudo apt install python3
+sudo apt -y install git
+sudo apt -y install make
+sudo apt -y install gfortran
+sudo apt -y install python3
 ```
 
 These commands have been collected in the script [`install_packages.sh`](install_packages.sh).
