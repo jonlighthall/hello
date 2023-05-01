@@ -16,6 +16,7 @@ Each program exhibits the following functionality.
 ### Prerequisites
 
 Compilers for C++ and Fortran are required.
+<<<<<<< HEAD
 The GNU compilers, etc, can be installed with the following commands.
 
 ```bash
@@ -27,6 +28,17 @@ sudo apt -y install python3
 
 These commands have been collected in the script [`install_packages.sh`](install_packages.sh).
 
+=======
+GNU compilers, etc, can be installed with the following commands.
+
+```bash
+sudo apt install git
+sudo apt install make
+sudo apt install gfortran
+sudo apt install python
+```
+
+>>>>>>> 2b2867668869afb8408043162da19f340886786d
 ### Cloning
 
 Check out the folder from the repository with one of the following commands.
@@ -59,7 +71,11 @@ The phython script is executed with either one of the following commands.
 
 `./hello.py`
 
+<<<<<<< HEAD
 `python3 hello.py`
+=======
+`python hello.py`
+>>>>>>> 2b2867668869afb8408043162da19f340886786d
 
 The bash script is executed with either one of the following commands.
 
