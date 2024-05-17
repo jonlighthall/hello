@@ -14,13 +14,13 @@ fwarning_flags = -Wall -Wsurprising -W -pedantic -Warray-temporaries	\
 -Wreal-q-constant -Wuse-without-only -Wrealloc-lhs-all
 cwarning_flags = -Wall -W -pedantic
 
-all: c.exe f.exe
+all: c f
 
-c.exe: hello.c makefile
+c: hello.c makefile
 	@echo compiling C++...
 	$(your_CC) $(ccflags) $(cwarning_flags) $< $(output_flags)
 
-f.exe: hello.f makefile
+f: hello.f makefile
 	@echo compiling fortan...
 	$(your_FC) $(fcflags) $(fwarning_flags) $< $(output_flags) -fall-intrinsics
 
@@ -30,11 +30,11 @@ clean:
 	@rm -fv *.exe | sed 's/^/  /'
 	@rm -fv a.out | sed 's/^/  /'
 
-run: c.exe f.exe
+run: c f
 	@echo
-	./c.exe
+	./c
 	@echo
-	./f.exe
+	./f
 	@echo
 	python hello.py
 	@echo
