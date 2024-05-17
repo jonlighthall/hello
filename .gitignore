@@ -4,6 +4,8 @@
 # Executables
 *.exe
 *.out
+c
+f
 
 # Emacs
 *~
